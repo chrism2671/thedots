@@ -39,6 +39,7 @@ floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
 bindsym Mod1+Shift+Return exec google-chrome 
 bindsym Mod1+Shift+f exec nautilus
+bindsym Mod1+Shift+o exec i3lock -i ~/.config/i3/gameover.png
 
 # Pulse Audio controls
 bindsym F10 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
