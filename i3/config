@@ -40,6 +40,15 @@ bindsym Mod1+Return exec i3-sensible-terminal
 bindsym Mod1+Shift+Return exec google-chrome 
 bindsym Mod1+Shift+f exec nautilus
 
+# Pulse Audio controls
+bindsym F10 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym F9 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym F8 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+bindsym F7 exec xbacklight -inc 20 # increase screen brightness
+bindsym F6 exec xbacklight -dec 20 # decrease screen brightness
+
 # kill focused window
 bindsym Mod1+Shift+q kill
 
