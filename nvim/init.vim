@@ -58,7 +58,8 @@ call plug#end()
 "VIMPLUG END
 
 noremap <c-f> :Files<CR>
-
+noremap <c-n> :NERDTreeToggle<CR>
+noremap <Leader>ev :e ~/.config/nvim/init.vim<CR>
 colorscheme molokai_dark
 autocmd FileType javascript set formatprg=prettier\ --stdin
 noremap <silent> <C-S>          :update<CR>
