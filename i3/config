@@ -47,8 +47,8 @@ bindsym F9 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volu
 bindsym F8 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym F7 exec xbacklight -inc 20 # increase screen brightness
-bindsym F6 exec xbacklight -dec 20 # decrease screen brightness
+bindsym F7 exec xbacklight -inc 5 # increase screen brightness
+bindsym F6 exec xbacklight -dec 5 # decrease screen brightness
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -190,3 +190,5 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
+exec compton -b
+exec redshift
