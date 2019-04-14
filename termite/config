@@ -12,9 +12,8 @@ font = Hack 13
 
 [colors]
 background = rgba(0, 0, 0, 0.7)
-/* background= #000000 */
-foreground= white 
-cursor = #67ff66
+foreground= white
+cursor= #67ff66
 color0= #101010
 color1= #960050
 color2= #66aa11
