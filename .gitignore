@@ -1,0 +1,9 @@
+/*
+!/nvim
+/nvim/bundle
+/nvim/.*
+!/i3status
+!/i3
+!/feh
+!/termite
+!/dunst

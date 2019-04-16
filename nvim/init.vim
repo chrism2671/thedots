@@ -19,6 +19,8 @@ Plugin 'https://github.com/tpope/vim-fugitive.git'
 Plugin 'leshill/vim-json'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on  " allows auto-indenting depending on file type
