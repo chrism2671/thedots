@@ -24,11 +24,11 @@
 " " All of your Plugins must be added before the following line
 " call vundle#end()
 " filetype plugin indent on  " allows auto-indenting depending on file type
-" set tabstop=2
-" set shiftwidth=2
-" set expandtab
-" set ignorecase
-" set smartcase
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set ignorecase
+set smartcase
 
 "VUNDLE END
 "VIMPLUG
@@ -86,6 +86,15 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 
 set ts=2
 set sts=2
