@@ -52,6 +52,7 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'leshill/vim-json'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'numkil/ag.nvim'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
