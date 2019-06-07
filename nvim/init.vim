@@ -1,29 +1,29 @@
 " VUNDLE
-filetype off
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle')
+" filetype off
+" " set the runtime path to include Vundle and initialize
+" set rtp+=~/.config/nvim/bundle/Vundle.vim
+" call vundle#begin('~/.config/nvim/bundle')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'slashmili/alchemist.vim'
-" Plugin 'maksimr/vim-jsbeautify'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'Yggdroot/indentLine'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'https://github.com/tpope/vim-fugitive.git'
-Plugin 'leshill/vim-json'
-Plugin 'w0rp/ale'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
+" " let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'flazz/vim-colorschemes'
+" Plugin 'slashmili/alchemist.vim'
+" " Plugin 'maksimr/vim-jsbeautify'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'Yggdroot/indentLine'
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'https://github.com/tpope/vim-fugitive.git'
+" Plugin 'leshill/vim-json'
+" Plugin 'w0rp/ale'
+" Plugin 'tpope/vim-commentary'
+" Plugin 'tpope/vim-surround'
 
-" All of your Plugins must be added before the following line
-call vundle#end()
-filetype plugin indent on  " allows auto-indenting depending on file type
+" " All of your Plugins must be added before the following line
+" call vundle#end()
+" filetype plugin indent on  " allows auto-indenting depending on file type
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -38,7 +38,22 @@ set smartcase
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-
+Plug 'VundleVim/Vundle.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'slashmili/alchemist.vim'
+" Plug 'maksimr/vim-jsbeautify'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'leshill/vim-json'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'numkil/ag.nvim'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/wesQ3/vim-windowswap'
@@ -71,6 +86,15 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 let g:deoplete#enable_at_startup = 1
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 
 set ts=2
 set sts=2
