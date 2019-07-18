@@ -47,6 +47,7 @@ exec --no-startup-id feh --bg-scale ~/.config/feh/spaceinvaders.png
 exec --no-startup-id xinput set-prop 9 282 1 #mouse tapping
 exec --no-startup-id xinput set-prop 9 290 1 #natural scroll
 exec --no-startup-id autorandr -l default
+exec --no-startup-id ~/.config/i3/i3-battery-popup
 
 # Pulse Audio controls
 bindsym F10 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
