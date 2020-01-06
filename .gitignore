@@ -2,6 +2,9 @@
 !/nvim
 /nvim/bundle
 /nvim/.*
+!/gtk-2.0
+!/gtk-3.0
+!/gtk-4.0
 !/i3status
 !/i3
 !/feh
