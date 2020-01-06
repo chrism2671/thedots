@@ -41,6 +41,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'slashmili/alchemist.vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'mhinz/vim-mix-format'
 " Plug 'maksimr/vim-jsbeautify'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
