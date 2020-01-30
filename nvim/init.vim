@@ -41,6 +41,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'slashmili/alchemist.vim'
+Plug 'habamax/vim-elixir-mix-test' 
 " Plug 'maksimr/vim-jsbeautify'
 Plug 'mhinz/vim-mix-format'
 Plug 'pangloss/vim-javascript'
@@ -79,6 +80,7 @@ call plug#end()
 noremap <c-f> :Files<CR>
 noremap <c-n> :NERDTreeToggle<CR>
 noremap <Leader>ev :e ~/.config/nvim/init.vim<CR>
+nmap <buffer> <leader>tt <Plug>(MixTestRun)
 colorscheme molokai_dark
 autocmd FileType javascript set formatprg=prettier\ --stdin
 noremap <silent> <C-S>          :update<CR>
