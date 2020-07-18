@@ -48,6 +48,8 @@ Plug 'habamax/vim-elixir-mix-test'
 Plug 'mhinz/vim-mix-format'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
@@ -65,7 +67,12 @@ Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/wesQ3/vim-windowswap'
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
+Plug 'Shougo/deoplete.nvim'
+" For Denite features
+Plug 'Shougo/denite.nvim'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'elixir-editors/vim-elixir'
