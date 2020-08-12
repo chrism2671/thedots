@@ -1,28 +1,3 @@
-" VUNDLE
-" filetype off
-" " set the runtime path to include Vundle and initialize
-" set rtp+=~/.config/nvim/bundle/Vundle.vim
-" call vundle#begin('~/.config/nvim/bundle')
-
-" " let Vundle manage Vundle, required
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'flazz/vim-colorschemes'
-" Plugin 'slashmili/alchemist.vim'
-" " Plugin 'maksimr/vim-jsbeautify'
-" Plugin 'pangloss/vim-javascript'
-" Plugin 'mxw/vim-jsx'
-" Plugin 'Yggdroot/indentLine'
-" Plugin 'airblade/vim-gitgutter'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'https://github.com/tpope/vim-fugitive.git'
-" Plugin 'leshill/vim-json'
-" Plugin 'w0rp/ale'
-" Plugin 'tpope/vim-commentary'
-" Plugin 'tpope/vim-surround'
-
-" " All of your Plugins must be added before the following line
-" call vundle#end()
 " filetype plugin indent on  " allows auto-indenting depending on file type
 set tabstop=2
 set shiftwidth=2
@@ -30,7 +5,6 @@ set expandtab
 set ignorecase
 set smartcase
 
-"VUNDLE END
 "VIMPLUG
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
